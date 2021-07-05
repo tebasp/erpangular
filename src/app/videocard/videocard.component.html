@@ -1,0 +1,33 @@
+<div class="card mb-3 border-0">
+  <div class="row g-0">
+    <div
+      class="
+        col-md-7
+        d-flex
+        justify-content-center
+        align-items-center
+        overflow-hidden
+      "
+    >
+      <youtube-player
+        [videoId]="video.url"
+        suggestedQuality="highres"
+        [height]="200"
+        [width]="300"
+        [startSeconds]="4"
+        [endSeconds]="8"
+      >
+      </youtube-player>
+    </div>
+    <div class="col-md-5">
+      <div class="card-body">
+        <h3 class="card-title">
+          <b>{{ video.name }}</b>
+        </h3>
+        <p class="card-text">
+          {{ video.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

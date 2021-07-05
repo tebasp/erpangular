@@ -1,0 +1,10 @@
+<div class="card m-2" style="width: 18rem">
+  <img [src]="student.picture.large" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h3 class="card-title mb-2">
+      {{ student.name.first }} {{ student.name.last }}
+    </h3>
+    <p class="text-muted">{{ student.email }}</p>
+    <button class="btn btn-primary"><mat-icon>email</mat-icon></button>
+  </div>
+</div>

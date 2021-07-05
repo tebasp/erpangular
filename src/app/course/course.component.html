@@ -1,0 +1,13 @@
+<div class="card bg-primary text-white rounded-0 h-100">
+  <div class="card-body">
+    <h2 class="card-title pb-2 mb-5 border-bottom border-gray">Cursos</h2>
+
+    <ul class="list-unstyled">
+      <li *ngFor="let link of links" class="mb-3">
+        <a [routerLink]="link.href" class="btn btn-info d-block text-white">
+          {{ link.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

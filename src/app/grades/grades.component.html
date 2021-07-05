@@ -1,0 +1,19 @@
+<div class="card mt-3 p-3">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th *ngFor="let heading of headings" scope="col">{{ heading }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students; let i = index">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ student.name.first }} {{ student.name.last }}</td>
+        <td>{{ getRandomGrade() }}</td>
+        <td>{{ getRandomGrade() }}</td>
+        <td>{{ getRandomGrade() }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

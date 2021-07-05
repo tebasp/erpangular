@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+$theme-colors: (
+  "primary": #354052,
+  "secondary": #00abff,
+  "info": #45bdb9,
+  "gray": #6f7d95,
+);
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,25 @@
+<div>
+  <div class="container-fluid">
+    <div class="row bg-primary">
+      <app-header></app-header>
+    </div>
+
+    <div class="row" style="min-height: 80vh">
+      <div class="d-none d-sm-block col-4 col-lg-3 p-0">
+        <app-course></app-course>
+      </div>
+      <div class="col col-lg-6 my-4">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="d-none d-lg-block col-lg-3 p-0">
+        <app-events></app-events>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 p-0">
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </div>
+</div>
